@@ -2,7 +2,10 @@ function ShareTest() {
   FB.ui(
    {
     method: 'share_open_graph',
-    href: 'https://eziofilho.github.io/new_layout/0.html'
+	action_type: 'og.likes',
+	action_properties: JSON.stringify({
+    object:'https://eziofilho.github.io/new_layout/0.html',
+	})
    }, function(response){
 
     console.log(response);
