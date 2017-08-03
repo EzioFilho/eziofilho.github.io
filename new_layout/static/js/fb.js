@@ -1,14 +1,11 @@
 function ShareTest() {
-  FB.ui({
+  FB.ui(
+   {
     method: 'share_open_graph',
-    action_type: 'og.likes',
-    action_properties: JSON.stringify({
-        object : {
-           'og:url': 'https://eziofilho.github.io/new_layout/0.html', // your url to share
-           'og:title': 'Qual combina com você?',
-           'og:image': 'https://eziofilho.github.io/new_layout/img/0/11.png'
-        }
-    })
+	action_type: 'og.likes',
+	action_properties: JSON.stringify({
+    object:'https://eziofilho.github.io/new_layout/0.html',
+	})
    }, function(response){
 
     console.log(response);
