@@ -35,5 +35,5 @@ function ImageResult(res, pos){
 		//  context.fillText("" + res + "", 120, 220);
 	 };
    imageObj.src = './img/0/' + pos + '.png'
-   getResult(pos, 0);
+   getResult(pos, '0');
 }

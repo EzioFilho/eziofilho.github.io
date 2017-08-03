@@ -1,8 +1,8 @@
 var imagetoShow;
 var testtoShare
 
-function getResult(res, testId){
-  imagetoShow = res;
+function getResult(pos, testId){
+  imagetoShow = pos;
   testtoShare = testId;
 }
 
