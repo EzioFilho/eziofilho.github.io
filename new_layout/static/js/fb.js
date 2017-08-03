@@ -7,6 +7,32 @@ function getResult(pos, testId){
 }
 
 
+var canvas;
+canvas = document.getElementById("myCanvas");
+//var data = canvas.toDataURL("image/png");
+//var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
+//var decodedPng = Base64Binary.decode(encodedPng);
+
+function postCanvasToFacebook() {
+	var data = canvas.toDataURL("image/png");
+	var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
+	var decodedPng = Base64Binary.decode(encodedPng);
+	FB.getLoginStatus(function(response) {
+	  if (response.status === "connected") {
+		postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "www.heroesgenerator.com");
+	  } else if (response.status === "not_authorized") {
+		 FB.login(function(response) {
+			postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "www.heroesgenerator.com");
+		 }, {scope: "publish_actions"});
+	  } else {
+		 FB.login(function(response)  {
+			postImageToFacebook(response.authResponse.accessToken, "heroesgenerator", "image/png", decodedPng, "www.heroesgenerator.com");
+		 }, {scope: "publish_actions"});
+	  }
+	 });
+
+};
+
 function ShareTest() {
   FB.ui(
    {

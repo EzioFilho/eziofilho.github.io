@@ -13,6 +13,10 @@ var signos = [
   'Capricórnio'    // 11
 ]
 
+var testeName = 'Qual signo mais combina com você?'
+
+var testeDescription = 'Descubra agora, só aqui no CoolTestes'
+
 function resultado (){
   show_hide_buttons();
   var pos = Math.floor(Math.random() * 11);
