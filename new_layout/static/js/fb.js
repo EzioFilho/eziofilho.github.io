@@ -4,7 +4,9 @@ function ShareTest() {
     method: 'share_open_graph',
 	action_type: 'og.likes',
 	action_properties: JSON.stringify({
-    object:'https://eziofilho.github.io/new_layout/0.html',
+    object:
+		'https://eziofilho.github.io/new_layout/0.html',
+		'og:image': 'https://eziofilho.github.io/new_layout/img/0/11.png' 
 	})
    }, function(response){
 
