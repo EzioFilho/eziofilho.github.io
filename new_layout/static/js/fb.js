@@ -6,7 +6,7 @@ function ShareTest() {
         object : {
            'og:url': 'https://eziofilho.github.io/new_layout/0.html', // your url to share
            'og:title': 'Qual combina com você?',
-           'og:image': '.img/0/11.png'
+           'og:image': 'https://eziofilho.github.io/new_layout/img/0/11.png'
         }
     })
    }, function(response){
