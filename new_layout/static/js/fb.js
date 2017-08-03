@@ -6,7 +6,9 @@ function ShareTest() {
 	action_properties: JSON.stringify({
     object:{
 		'og:url': 'https://eziofilho.github.io/new_layout/0.html',
-		'og:image': 'https://eziofilho.github.io/new_layout/img/0/11.png'
+		'og:title': 'Here my custom title',
+        'og:description': 'here custom description',
+		'og:image': 'https://eziofilho.github.io/new_layout/img/0/teste.jpg'
 	}
 		 
 	})
