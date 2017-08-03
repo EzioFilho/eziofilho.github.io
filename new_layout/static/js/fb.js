@@ -1,5 +1,5 @@
 var imagetoShow;
-var testtoShare
+var testtoShare;
 
 function getResult(pos, testId){
   imagetoShow = pos;
