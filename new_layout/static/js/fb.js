@@ -2,7 +2,7 @@ function ShareTest() {
   FB.ui(
    {
     method: 'share',
-    href: 'localhost/cooltestes/new_layout/0'
+    href: 'https://eziofilho.github.io/new_layout/0.html'
    }, function(response){
 
     console.log(response);
