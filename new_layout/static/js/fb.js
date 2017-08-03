@@ -1,16 +1,27 @@
+var imagetoShow;
+var testtoShare
+
+function getResult(res, testId){
+  imagetoShow = res;
+  testtoShare = testId;
+}
+
+
+
+
 function ShareTest() {
   FB.ui(
    {
-    method: 'share_open_graph',
-	action_type: 'og.likes',
-	action_properties: JSON.stringify({
-    object:{
-		'og:url': 'https://eziofilho.github.io/new_layout/0.html',
-		'og:title': 'Here my custom title',
-        'og:description': 'here custom description',
-		'og:image': 'https://eziofilho.github.io/new_layout/img/0/teste.jpg'
+     method: 'share_open_graph',
+	   action_type: 'og.likes',
+	   action_properties: JSON.stringify({
+     object:{
+		 'og:url': 'https://eziofilho.github.io/new_layout/'+res+'.html',
+		 'og:title': 'Here my custom title',
+     'og:description': 'here custom description',
+		 'og:image': 'https://eziofilho.github.io/new_layout/img/'+testtoShare+'/'+imagetoShow+'.png'
 	}
-		 
+
 	})
    }, function(response){
 
