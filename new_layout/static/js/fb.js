@@ -7,8 +7,6 @@ function getResult(res, testId){
 }
 
 
-
-
 function ShareTest() {
   FB.ui(
    {
@@ -16,7 +14,7 @@ function ShareTest() {
 	   action_type: 'og.likes',
 	   action_properties: JSON.stringify({
      object:{
-		 'og:url': 'https://eziofilho.github.io/new_layout/'+res+'.html',
+		 'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
 		 'og:title': 'Here my custom title',
      'og:description': 'here custom description',
 		 'og:image': 'https://eziofilho.github.io/new_layout/img/'+testtoShare+'/'+imagetoShow+'.png'
