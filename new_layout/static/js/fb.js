@@ -1,7 +1,7 @@
 function ShareTest() {
   FB.ui(
    {
-    method: 'share',
+    method: 'share_open_graph',
     href: 'https://eziofilho.github.io/new_layout/0.html'
    }, function(response){
 
