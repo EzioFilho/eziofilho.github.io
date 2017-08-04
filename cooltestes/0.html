@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Qual signo mais combina com você?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="fav.ico">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="./img/loads/load5.png" alt="" /></span><span class="title">Cool Testes</span>
+								</a>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+						</div>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+					  <h2>Menu</h2>
+					  <ul>
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+					  </ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner" style="text-align:center; margin:auto;">
+							<h1>Qual signo mais combina com você?</h1>
+							<header><!-- PROPAGANDA --></header>
+
+							<canvas crossOrigin="Anonymous" id="myCanvas" style="visibility:hidden;display:none;width:100%;height:100%;"></canvas>
+							<img src="./img/loads/init_load.png" alt="porquinho" id="porquinho" style="visibility:hidden;display:none;width:111px;height:96px;">
+							<div id="load"><span class="image main"><img src="img/0/init.png" alt="" id="imagem" /></span></div>
+
+							<ul class="actions">
+								<li><button type="button" class="button fit" onclick="init_load(); this.disabled=true;" id="botao_iniciar_teste">Iniciar Teste</button></li>
+							</ul>
+							<ul class="actions">
+								<li><button type="button" class="button fit" onclick="location.href='./0.html';" id="botao_refazer_teste" style="display:none;visibility:hidden;">Repetir Teste</button></li>
+								<li><button type="button" class="button fit" onclick="ShareTest(0)" id="botao_compartilhar" style="display:none;visibility:hidden;">Compartilhar</button></li>
+							</ul>
+
+							<header><!-- PROPAGANDA --></header>
+
+							<hr  />
+							<p>Experimente outros testes: </p>
+							<div w3-include-html="testes.html"></div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer id="footer">
+					  <div class="inner">
+							<div w3-include-html="footer.html"></div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script>w3.includeHTML();</script>
+
+			<script src="./static/js/fb.js"></script>
+			<script src="./static/js/base64binary.js"></script>
+			<script src="./static/js/geral.js"></script>
+			<script src="./static/js/0.js"></script>
+	</body>
+</html>
