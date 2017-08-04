@@ -4,6 +4,8 @@ var canvas;
 canvas = document.getElementById("myCanvas")
 
 var data = canvas.toDataURL("image/png", 1.0);
+
+var realData = console.log(data);
 function getResult(pos, testId){
   imagetoShow = pos;
   testtoShare = testId;
@@ -21,7 +23,7 @@ function ShareTest() {
 		 'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
 		 'og:title': 'Here my custom title',
      'og:description': 'here custom description',
-		 'og:image': console.log(data)
+		 'og:image': realData
 	}
 
 	})
