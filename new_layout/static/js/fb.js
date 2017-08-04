@@ -5,6 +5,8 @@ canvas = document.getElementById("myCanvas")
 
 var data = canvas.toDataURL();
 console.log(data);
+var encodedPng = data.substring(data.indexOf(',') + 1, data.length);
+var decodedPng = Base64Binary.decode(encodedPng);
 
 function getResult(pos, testId){
   imagetoShow = pos;
@@ -23,7 +25,7 @@ function ShareTest() {
        'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
        'og:title': 'Here my custom title',
        'og:description': 'here custom description',
-       'og:image': data
+       'og:image': decodedPng
 	}
 
 	})
