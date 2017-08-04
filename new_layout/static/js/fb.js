@@ -3,9 +3,9 @@ var testtoShare;
 var canvas;
 canvas = document.getElementById("myCanvas")
 
-var data = canvas.toDataURL("image/png", 1.0);
+var data = canvas.toDataURL();
+console.log(data);
 
-var realData = console.log(data);
 function getResult(pos, testId){
   imagetoShow = pos;
   testtoShare = testId;
