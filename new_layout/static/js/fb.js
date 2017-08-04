@@ -21,7 +21,7 @@ function ShareTest() {
 		 'og:url': 'https://eziofilho.github.io/new_layout/'+testtoShare+'.html',
 		 'og:title': 'Here my custom title',
      'og:description': 'here custom description',
-		 'og:image': console.log(data);
+		 'og:image': console.log(data)
 	}
 
 	})
